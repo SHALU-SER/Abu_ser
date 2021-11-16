@@ -6,7 +6,7 @@
 ## [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Lemon+milk&color=F7000&lines=Welcome+to+Kaztroser+WA+Bot+repo;Created+by+Ajayan;This+is+a+userbot+privet+and+public+bot;With+more+features)](https://git.io/typing-svg)
 <div align="center">
   <p align="center">
-<img src=https://i.ibb.co/xCFcGCN/amalser.jpg>
+<img src=photo/Kaztro.webp>
 </p>
   <p align="center">
 <a href="https://github.com/cyberchekuthan"><img title="Author" src="https://img.shields.io/badge/Author-Ajayan-cyberchekuthan/Kaztroser_v2?color=blue&style=for-the-badge&logo=whatsapp"></a>
