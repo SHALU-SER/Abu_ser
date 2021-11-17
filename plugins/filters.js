@@ -58,7 +58,7 @@ await message.client.sendMessage(message.jid, fs.readFileSync('./uploads/mention
 await message.client.sendMessage(message.jid, fs.readFileSync('uploads/mention.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio,duration: Config.SAID, quoted : message.data, ptt: true})
         }
         
-const array = ['Ajayan','aj cutzz','aj fx','ajayan','alive','ambada','avastha','bad boy','bgm','bot noobe','bot','breakup','bro','business','chat','com','cristiano','gm','gn','good','group','hacker','hello','help','hi','home','https','indo','kollam','kollamo','kooi','lalettan','line','love me','love','mm','modesh','muthe','myr','nanban','nanbans','neymer','njr','noorin','noorin shereef','of','off','owner','photo','pm','potte','remove','report','ronaldo','school','seen','sex','singel','spam','sticker','umma','welcome','wine','you']
+const array = ['Ajayan','aj cutzz','aj fx','ajayan','alive','ambada','avastha','bad boy','bgm','bot noobe','bot','breakup','bro','business','chat','com','cristiano','gm','gn','good','group','hacker','hello','help','hi','home','https','indo','kollam','kollamo','kooi','lalettan','line','love me','love','mm','modesh','muthe','myr','nanban','nanbans','neymer','njr','noorin','noorin shereef','of','off','owner','photo','pm','potte','remove','report','ronaldo','school','seen','sex','singel','spam','sticker','umma','welcome','wine','you','neymar']
 array.map( async (a) => {
 let pattern = new RegExp(`\\b${a}\\b`, 'g');
 if(pattern.test(message.message)){
