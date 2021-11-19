@@ -7,7 +7,7 @@ const Config = require('../config')
 
 // Inbox Block System
 // This Plugins By Hisham Muhammed 
-const INBO = "Inbox Not Allowed"
+const INBO = "Pm inbox Not Allowed join this whatsapp group https://chat.whatsapp.com/D3AtxKioDPdJkoBqVHtDRT"
  if (Config.INBO == 'true') {
 Hisham.addCommand({on: 'text', fromMe: false, delownsewcmd: false, onlyPm: true }, (async (message, match) => {
         let regexb1ichu = new RegExp('.')
