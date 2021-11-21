@@ -34,6 +34,16 @@
             "description": "If you likes bgm you can write 'true'. Otherwise false",
             "required": false,
             "value": "true"
+       },
+        "AMAL_SER": {
+            "description": "Set the alive message two name",
+            "required": true,
+            "value": "Hello"
+        },
+        "AMAL_S": {
+            "description": "Set the Alive message first name",
+            "required": true,
+            "value": "Hii"
         },
         "INBO_BLOCK": {
             "description": "Inbox Blocking System. True koduthal ningalude pml vann chila bad words upoayogikunnavare bot block aakum block aakendengil false kodukuka",
@@ -126,12 +136,12 @@
         "EMOJI_COMMAND": {
             "description": "You can change Command list emojis.)",
             "required": true,
-            "value": "🧑‍🎄"
+            "value": "❄️"
         },
         "EMOJI_DESCRIPTION": {
             "description": "You can change command list emojis.)",
             "required": true,
-            "value": "💙"
+            "value": "☃️"
         },
         "EMOJI_EXAMPLE": {
             "description": "You can change command list emojis.)",
