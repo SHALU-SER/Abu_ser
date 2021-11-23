@@ -43,7 +43,6 @@ module.exports = {
     STICKERP: process.env.AUTO_STICKER === undefined ? true : convertToBool(process.env.AUTO_STICKER),
     DISSTICKER: process.env.DISABLE_STICKER === undefined ? false : process.env.DISABLE_STICKER,
     BOT: process.env.BOT_NAME === undefined ? '⊢‒‒‒ ⋈ ᴋᴀᴢᴛʀᴏsᴇʀ ⋈ ‒‒‒⊣' : process.env.BOT_NAME,
-    LIST: process.env.BOT_NAME === undefined ? '⊢‒‒‒ ⋈ ᴋᴀᴢᴛʀᴏsᴇʀ ⋈ ‒‒‒⊣' : process.env.BOT_NAME,
     KAZTRO_SER: process.env.KAZTRO_SER === undefined ? 'Hello' : process.env.KAZTRO_SER,
     KAZTRO_S: process.env.KAZTRO_S === undefined ? 'Hii' : process.env.KAZTRO_S,      
     NOLOG: process.env.NO_LOG === undefined ? 'true' : process.env.NO_LOG,
