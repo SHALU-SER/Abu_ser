@@ -11,7 +11,7 @@ var ddd = ggg.toString('utf-8')
 
 let whb = Config.WORKTYPE == 'public' ? false : true
 
-WhatsAlexa.addCommand({pattern: 'liste', fromMe: whb, dontAddCommandList: true}, (async (message, match) => {
+WhatsAlexa.addCommand({pattern: 'list', fromMe: whb, dontAddCommandList: true}, (async (message, match) => {
 // send a buttons message! Amalser.
     var plk_say = new Date().toLocaleString('HI', { timeZone: 'Asia/Kolkata' }).split(' ')[1]
 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
@@ -26,7 +26,7 @@ var afnplk = '```⏱ Time :' + plk_say + '```\n\n ```📅 Date :' + plk_here + '
       ]
       
       const buttonMessage = {
-          contentText: ' ʜɪ ʙʀᴏ---👼🏻\n\n```BOT NAME:``` *'+Config.LISTE+'*\n\n💙 ᴛɪᴍᴇ   : ```' + plk_say + '```\n🥶 ᴅᴀᴛᴇ : ```' + plk_here + '```\n\n☃️ ᴄʟɪᴄᴋ ᴍᴇɴᴜ ᴀɴᴅ ᴇɴᴊᴏʏ ᴛʜᴇ ʙᴏᴛ\n', 
+          contentText: ' ʜɪ ʙʀᴏ---👼🏻\n\n```BOT NAME:``` *'+Config.LIST+'*\n\n💙 ᴛɪᴍᴇ   : ```' + plk_say + '```\n🥶 ᴅᴀᴛᴇ : ```' + plk_here + '```\n\n☃️ ᴄʟɪᴄᴋ ᴍᴇɴᴜ ᴀɴᴅ ᴇɴᴊᴏʏ ᴛʜᴇ ʙᴏᴛ\n', 
           footerText: '© ᴀᴊ ғx💕',
           buttons: buttons,
           headerType: 1
