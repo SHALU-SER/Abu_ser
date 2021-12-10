@@ -35,12 +35,12 @@
             "required": false,
             "value": "true"
        },
-        "AMAL_SER": {
+        "KAZTRO_SER": {
             "description": "Set the alive message two name",
             "required": true,
             "value": "Hello"
         },
-        "AMAL_S": {
+        "KAZTRO_S": {
             "description": "Set the Alive message first name",
             "required": true,
             "value": "Hii"
