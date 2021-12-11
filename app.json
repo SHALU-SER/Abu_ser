@@ -38,12 +38,12 @@
         "KAZTRO_SER": {
             "description": "Set the alive message two name",
             "required": true,
-            "value": "Hello"
+            "value": "Happy"
         },
         "KAZTRO_S": {
             "description": "Set the Alive message first name",
             "required": true,
-            "value": "Hii"
+            "value": "Sed"
         },
         "INBO_BLOCK": {
             "description": "Inbox Blocking System. True koduthal ningalude pml vann chila bad words upoayogikunnavare bot block aakum block aakendengil false kodukuka",
