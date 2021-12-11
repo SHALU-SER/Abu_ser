@@ -11,7 +11,7 @@ r_text[1] = "✨〰️ നėȑȑყ ᑤիȑîṡ𝔱ʍạṡ 〰️✨";
 r_text[2] = "🎅 ꗟȃກƫȃ îຮ Ͼõṁîກɡ ! 😍🎁🎁";
 r_text[3] = "★*🌙☆* 🦌🛷 Ṃϱ໗໗у ϾԦᎥ໗ຮŁᘻลຮ";
 r_text[4] = "☃️❄️Hᴀᴘᴘʏ ᴄʜʀɪsᴛᴍᴀs❄️☃️";
-r_text[5] = "🎅🏻🥶ℍ𝕒𝕡𝕡𝕪 𝕔𝕙𝕣𝕚𝕤𝕥𝕞𝕒𝕤🥶🎅🏻.\n       -Ajfx💕";    
+r_text[5] = "🎅🏻🥶ℍ𝕒𝕡𝕡𝕪 𝕔𝕙𝕣𝕚𝕤𝕥𝕞𝕒𝕤🥶🎅🏻.\n";    
 var i = Math.floor(6*Math.random())
 
 await message.sendMessage(r_text[i]);
