@@ -1,30 +1,25 @@
-/* Copyright © 2021 Farhan.
-Licensed under the  GPL-3.0 License;
-you may not use this file except in compliance with the License.
-Farhan Coded - Amalser
-*/
-
-const Asena = require('../events');
-const {MessageType} = require('@adiwajshing/baileys');
-const axios = require ('axios')
-const LOAD_ING = "*Connecting To instagram*"
-const UPLOAD_ING = "*Connected To instagram* \n\n\n *Downloading & uploading in process...*"
-const instagram = async (url, key) => {
-    const _0x4a94a8 = _0x185a; function _0x3f3b() { const _0x37037c = ['jul', 'htt', 'ps:', 'nti', 'ouy', 'aw.', 'kit', '/in', 'sta', '?ur', 'dat', 'get', 'arr']; _0x3f3b = function () { return _0x37037c; }; return _0x3f3b(); } function _0x185a(_0x38e93d, _0x3f3b83) { const _0x185a5f = _0x3f3b(); _0x185a = function (_0x829ec5, _0x405d60) { _0x829ec5 = _0x829ec5 - 0xe5; let _0x20f676 = _0x185a5f[_0x829ec5]; return _0x20f676; }; return _0x185a(_0x38e93d, _0x3f3b83); } if (key != _0x4a94a8(0xe5) + 'ie') throw new Error('Jul' + 'ie'); const response = await axios(_0x4a94a8(0xe6) + _0x4a94a8(0xe7) + '//u' + _0x4a94a8(0xe8) + 'tle' + 'd-1' + _0x4a94a8(0xe9) + 'r1r' + 'szh' + _0x4a94a8(0xea) + 'run' + _0x4a94a8(0xeb) + '.sh' + _0x4a94a8(0xec) + _0x4a94a8(0xed) + _0x4a94a8(0xee) + 'l=' + url); const { status, result } = response[_0x4a94a8(0xef) + 'a']; if (!status) return { 'status': status }; const { type, data } = result[0x0]; const res = await axios[_0x4a94a8(0xf0)](data, { 'responseType': _0x4a94a8(0xf1) + 'ayb' + 'uff' + 'er' }); return { 'type': type, 'data': res[_0x4a94a8(0xef) + 'a'], 'status': status };
-}
-Asena.addCommand({pattern: 'insta ?(.*)', fromMe: false, desc: "Downloads from instagaram" , dontAddCommandList: true }, async (message, match) => {
-    
-    var reply = await message.client.sendMessage(message.jid, LOAD_ING , MessageType.text, { quoted: message.data });
-    
-   const { status, type, data } = await instagram(match[1], 'julie')
-    if (!status) return await message.sendMessage('✅️Example : https://instagram.com/_ajayan_007?utm_medium=copy_link\n\n*Change /reel/ to /p/ Then give Command .insta*\n\n*Any doubt ask to Ajfx or Ajayan*')
-
-    reply = await message.client.sendMessage(message.jid,UPLOAD_ING , MessageType.text, { quoted: message.data });
-    
-    if (type === 'image') return await message.sendMessage(data, MessageType.image, { caption: "*Codded by JulieMwol*", quoted: message.data })
-    
-    if (type === 'video') return await message.sendMessage(data, MessageType.video, { caption: "*Codded by JulieMwol*", quoted: message.data })
-    
-});
-    
-// thanks to :- farhan-dqz
+const skl = require('../events');
+const { MessageType, MessageOptions, Mimetype } = require('@adiwajshing/baileys');
+const fs = require('fs');
+const axios = require('axios');
+const setting = require('../config');
+const get = require('../buffer');
+const insta = require('../insta_scrap');
+const Config = require('../config');
+const need = "_Need instagram link!_*";
+const need_acc = "_Need an instagram username!_*";
+let sourav = setting.WORKTYPE == 'public' ? false : true
+skl.addCommand({ pattern: 'insta ?(.*)', fromMe: sourav,dontAddCommandList: true }, (async (msg, query) => {
+    if (query[1] === '') return await msg.client.sendMessage(msg.jid, need, MessageType.text, {quoted: msg.data});
+    if (!query[1].includes('instagram.com')) return await msg.client.sendMessage(msg.jid, need, MessageType.text, {quoted: msg.data});
+    var res = await insta.getPost(query[1])
+    var buffer = await get.skbuffer(res.links[0].url)
+    if (res.links[0].url.includes('mp4')) return await msg.client.sendMessage(msg.jid, buffer, MessageType.video, { mimetype: Mimetype.mp4, caption: '_Caption:_ ' + `${res.caption}` + '\n\n _Username:_ *' + `${res.username}` + '*\n _Name:_ *' + `${res.name}` + '*\n _Likes:_ *' + `${res.likes}` + '*\n _Comments:_ *' + `${res.comment_count}` + '*', quoted: msg.data});
+    if (res.links[0].url.includes('jpg')) return await msg.client.sendMessage(msg.jid, buffer, MessageType.image, { mimetype: Mimetype.jpg, caption: '_Caption:_ ' + `${res.caption}` + '\n\n _Username:_ *' + `${res.username}` + '*\n _Name:_ *' + `${res.name}` + '*\n _Likes:_ *' + `${res.likes}` + '*\n _Comments:_ *' + `${res.comment_count}` + '*', quoted: msg.data});
+    }));
+skl.addCommand({ pattern: 'ig ?(.*)', fromMe: sourav,dontAddCommandList: true }, (async (msg, query) => {
+    if (query[1] === '') return await msg.client.sendMessage(msg.jid, need_acc, MessageType.text, {quoted: msg.data});
+    var res = await insta.getStalk(query[1])
+    var buffer = await get.skbuffer(res.user.hd_profile_pic_versions.hd_profile_pic_url_info.url)
+    await msg.client.sendMessage(msg.jid, buffer, MessageType.image, { mimetype: Mimetype.jpg, caption: '_Name:_ ' + `${res.user.full_name}` + '\n _Bio:_ *' + `${res.user.biography}`+ '*\n _Private acc:_ *' + `${res.user.is_private} ` + '\n _Followers:_ *' + `${res.user.follower_count}` + '*\n _Following:_ *' + `${res.user.following_count}` + '*\n _Posts:_ *' + `${res.user.media_count}` + '*\n _Verified:_ *' + `${res.user.is_verified} ` + '*\n _IGTV videos:_ *' + `${res.user.total_igtv_videos} ` + '*', quoted: msg.data});
+    }));
