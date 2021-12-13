@@ -6,16 +6,8 @@ const axios = require('axios');
 Asena.addCommand({pattern: 'alive', fromMe: false,dontAddCommandList: true}, (async (message, match) => {
 
     var r_text = new Array ();    
-r_text[0] = "\nMerry★* 。 • ˚ ˚ ˛ ˚ ˛ •
-•。★Christmas★ 。* 。
-° 。 ° ˛˚˛ * _Π_____*。*˚
-˚ ˛ •˛•˚ */______/~＼。˚ ˚ ˛
-˚ ˛ •˛• ˚ ｜ 田田 ｜門｜ ˚\n";
-r_text[1] = "Merry★* 。 • ˚ ˚ ˛ ˚ ˛ •
-•。★Christmas★ 。* 。
-° 。 ° ˛˚˛ * _Π_____*。*˚
-˚ ˛ •˛•˚ */______/~＼。˚ ˚ ˛
-˚ ˛ •˛• ˚ ｜ 田田 ｜門｜ ˚And a happy new year!";
+r_text[0] = "\n🥶❄️🎅🏻☃️\n";
+r_text[1] = "🥶❄️❄️☃️🎅🏻🎅🏻";
 r_text[2] = "¨¨¨¨¨¨¨¨¨★
 ¨¨¨¨¨¨¨¨¨**
 ¨¨¨¨¨¨¨¨¨*o*
