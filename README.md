@@ -37,7 +37,7 @@ Project created by <a href="https://github.com/cyberchekuthan">Kaztroser</a> to 
 
 
   
-[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@Amalser/Amalser)
+[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@Aj-fx/Kaztroserv2)
   
 ### The Hard Method
 ```js
