@@ -1,6 +1,6 @@
 {
-    "name": "Kaztroser ",
-    "description": "Kaztroser is the Modified Version of WhatsAsena, Made By @Aj-fx with Baileys.",
+    "name": "Abu_ser ",
+    "description": "Abu_ser is the Modified Version of WhatsAsena, Made By @SHALU-SER with Baileys.",
     "logo": "https://i.ibb.co/xCFcGCN/amalser.jpg",
     "keywords": ["whatsapp", "userbot", "julie", "WhatsAsena", "mwol", "bot", "ai"],
     "repository": "https://github.com/Amal-ser/Amalser",
@@ -35,12 +35,12 @@
             "required": false,
             "value": "true"
        },
-        "KAZTRO_SER": {
+        "ABU_SER": {
             "description": "Set the alive message two name",
             "required": true,
             "value": "Happy"
         },
-        "KAZTRO_S": {
+        "ABU_S": {
             "description": "Set the Alive message first name",
             "required": true,
             "value": "Sed"
@@ -176,7 +176,7 @@
         "BOT_NAME": {
             "description": "heading for .list command reply",
             "required": true,
-            "value": "༺═══❃ᴋᴀᴢᴛʀᴏsᴇʀ❃═══༻"
+            "value": "༺═══❃ᴀʙᴜsᴇʀ❃═══༻"
         },
         "WORK_TYPE": {
             "description": "Amalser Working Type. If you use “public”, everyone can use the bot. Else if you use “private”, only you can use your bot.",
