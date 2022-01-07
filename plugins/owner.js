@@ -12,7 +12,7 @@ if (Config.WORKTYPE == 'private') {
         }
 
         if (Config.OWNER == 'default') {
-            await message.client.sendMessage(message.jid,'*Amalser by Amal*' , MessageType.text);
+            await message.client.sendMessage(message.jid,'*Abuser by Jasil*' , MessageType.text);
         }
         else {
             await message.client.sendMessage(message.jid,Config.OWNER + '\n\n---------------------', MessageType.text);
@@ -30,7 +30,7 @@ else if (Config.WORKTYPE == 'public') {
         }
 
         if (Config.OWNER == 'default') {
-            await message.client.sendMessage(message.jid,'*Kaztroser by Aj-fx💙 Ajayan*' , MessageType.text);
+            await message.client.sendMessage(message.jid,'*Abuser by Abu-💙 Jasil*' , MessageType.text);
         }
         else {
             await message.client.sendMessage(message.jid,Config.OWNER + '\n\n--------------------', MessageType.text);
