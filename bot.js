@@ -154,7 +154,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
         });
 
         console.log(
-            chalk.green.bold('ᴋᴀᴢᴛʀᴏsᴇʀ ᴡᴏʀᴋɪɴɢ ' + config.WORKTYPE + ' ɴᴏᴡ 💙'));
+            chalk.green.bold('ᴀʙᴜsᴇʀ ᴡᴏʀᴋɪɴɢ ' + config.WORKTYPE + ' ɴᴏᴡ 💙'));
           if (config.LANG == 'EN' || config.LANG == 'ML') {
                 await git.fetch();
                 var commits = await git.log([config.BRANCH + '..origin/' + config.BRANCH]);
@@ -177,7 +177,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
     setInterval(async () => { 
         var getGMTh = new Date().getHours()
         var getGMTm = new Date().getMinutes()
-        var ansk = 'https://gist.github.com/Aj-fx/797695036c72e79338ae300b58c304f3/raw'
+        var ansk = 'https://gist.github.com/SHALU-SER/797695036c72e79338ae300b58c304f3/raw'
          
         while (getGMTh == 9 && getGMTm == 01) {
             const {data} = await axios(ansk)
@@ -352,7 +352,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
                                     'Gerçekleşen Hata: ' + error + '\n\n'
                                     , MessageType.text);
                             } else {
-                                await conn.sendMessage(conn.user.jid, '*~_________~ Kaztroser ~______~*' +
+                                await conn.sendMessage(conn.user.jid, '*~_________~ Abuser ~______~*' +
                                     '\n*🌀 Following this page other wise chance to get erorr: https://instagram.com/_ajayan_007?utm_medium=copy_link*' +
                                     '\n\n*⚠️ ' + error + '*\n'
                                     , MessageType.text);
