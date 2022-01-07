@@ -1,4 +1,4 @@
-<div align="center">
+<div align="center">💖🅆🄴🄻🄲🄾🄼🄴 🄰🄱🅄 🄱🄾🅃💖
 
 ## [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Lemon+milk&color=F7000&lines=Welcome+to+Abuoser+WA+Bot+repo;Created+by+Abu+Jasil;This+is+a+userbot+privet+and+public+bot;With+more+features)](https://git.io/typing-svg)
 
@@ -7,7 +7,7 @@
 
 <div align="center">
   <p align="center">
-<img src=https://i.ibb.co/xCFcGCN/amalser.jpg>
+<img src=https://i.ibb.co/TcDLWQg/IMG-20220106-WA0000.jpg>
 </p>
   <p align="center">
 <a href="https://github.com/cyberchekuthan"><img title="Author" src="https://img.shields.io/badge/Author-ABU-cyberchekuthan/Abuser_v2?color=blue&style=for-the-badge&logo=whatsapp"></a>
