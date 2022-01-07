@@ -37,7 +37,7 @@ Project created by <a href="https://github.com/cyberchekuthan">Abu_ser</a> to ma
 
 
   
-[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@Aj-fx/Kaztroserv2?v=1)
+[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@ABUOP1/Abuserv2-1?v=1)
   
 ### The Hard Method
 ```js
